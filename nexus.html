@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Discografia</a></li>
+    <li><a href="#">Turnê</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</nav>
+
+<button id="menu-toggle">☰ Menu</button>
+
+
+<h1>GALERIA NEXUS</h1>
+
+<div class="filter-buttons">
+  <button onclick="filterGallery('all')">Todos</button>
+  <button onclick="filterGallery('show')">Show</button>
+  <button onclick="filterGallery('ensaio')">Ensaio</button>
+  <button onclick="filterGallery('backstage')">Backstage</button>
+</div>
+
+<div class="gallery">
+  <div class="card show">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTCGpPChyphenhyphen9UywvVE3okUC55YuEyeX_DgnOvkuyCa-Fq2CcvPMC5xrFFGQ5GM36BRMVX1REaniVs90Kkb1r11twx93mGy9FM2fSjrVN1XBES5F3SuyLsL466CDREqYPNqNKJEVKwsihLXDw/s400/of.jpg" alt="Show 1">
+  </div>
+  <div class="card show">
+    <img src="https://fotoslegais.com.br" alt="Show 2">
+  </div>
+  <div class="card ensaio">
+    <img src="https://fotoslegais.com.br" alt="Ensaio 1">
+  </div>
+  <div class="card ensaio">
+    <img src="https://fotoslegais.com.br" alt="Ensaio 2">
+  </div>
+  <div class="card backstage">
+    <img src="https://fotoslegais.com.br" alt="Backstage 1">
+  </div>
+  <div class="card backstage">
+    <img src="https://fotoslegais.com.br" alt="Backstage 1">
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="carousel">
+    <img id="member-photo" src="membro1.jpg" alt="Integrante da banda">
+  </div>
+
+  <div class="info">
+    <h2 id="member-name">Nome do integrante</h2>
+    <p id="member-bio">Colocar Biografia Aqui</p>
+    <button class="pedal-button" onclick="updateMember()">
+      <i class="fas fa-guitar"></i> Próximo Integrante
+    </button>
+  </div>
+</div>
+
+
+ 
+
+
+<section class="spotify-section">
+  <h2>Ouça a playlist feita pela Nexus no Spotify 🎧</h2>
+  <div class="spotify-player">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3zhLMaw3E9oVL70CoIcMB4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+</section>
+
+<section class="instagram-section">
+  <h2>Siga a Nexus no Instagram 📷</h2>
+  <div class="instagram-embed">
+    <iframe src="https://snapwidget.com/embed/123456" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:300px;"></iframe>
+  </div>
+</section>
+
+<script src="script.js"></script>  
+</body>
+</html>

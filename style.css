@@ -1,0 +1,186 @@
+nav {
+  background-color: #111; /* Fundo escuro */
+  padding: 15px;
+  font-family: 'Rock Salt', cursive; /* Fonte estilo rock */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: #f00; /* Vermelho */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #f00;
+  color: #fff; /* Texto branco no hover */
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block; /* Mostra botão em telas pequenas */
+  }
+
+  #navbar ul {
+    display: none; /* Esconde o menu por padrão */
+    flex-direction: column;
+  }
+
+  #navbar.active ul {
+    display: flex; /* Mostra quando ativo */
+  }
+}
+
+body{
+  background-color: #dcded0;
+  color:#f00;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.carousel img{
+  width: 300px;
+  height: auto;
+  border: 5px solid red;
+  transition: transform 0.5s ease-in-out
+}
+
+.info{
+  max-width: 400px;
+}
+
+.pedal-button{
+  background: linear-gradient(145deg, #8b0000, #ff0000);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 12px;
+  box-shadow:0 8px #550000;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pedal-button i{
+  font-size: 20px;
+  animation: solo-infinito 2s infinite linear;
+}
+
+.pedal-button:active{
+  transform: translateY(4px);
+  box-shadow: 0px #550000;
+  animation: vibra 0.1s linear 2;
+}
+
+@keyframes vibra{
+  0% {transform: translateY(4px) rotate(0deg);}
+  25% {transform: translateY(4px) rotate(1deg);}
+  50% {transform: translateY(4px) rotate(-1deg);}
+  75% {transform: translateY(4px) rotate(1deg);}
+  100% {transform: translateY(4px) rotate(0deg);}
+}
+
+@keyframes solo-infinito{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+h1{
+  color: rgb(109, 12, 12)
+}
+
+.filter-buttons{
+  margin-bottom: 20px;
+}
+
+.filter-buttons button{
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a1212;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-buttons button:hover{
+  background-color: #ff4d4d
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card{
+  width: 200px;
+  border: 2px solid #f00;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card img{
+  width: 100%;
+  display:block;
+}
+
+.hidden{
+  transform: scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.spotify-section{
+  margin-top: 80px;
+  padding: 40px 20px;
+  background: linear-gradient(145deg, #6a1212, #0a0a0a);
+  border-top:4pb solid #6a1212;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  color: white;
+  font-family:'Impact', sans-serif;
+}
+
+spotify-section h2{
+  font-size:28px;
+  margin-bottom:20px;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.spotify-player{
+  max-width:500px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  border-radius: 12px;
+  overflow: hidden;
+}
